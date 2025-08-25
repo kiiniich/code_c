@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	int i = 0;
+	char password[20] = { 0 };
+	for (i = 0; i < 3; i++)
+	{
+		printf("ÇëÊäÈëÃÜÂë£º");
+		scanf("%s", password);
+		if (strcmp("sjhsjw", password) == 0)
+		{
+			printf("µÇÂ¼³É¹¦£¡\n");
+			break;
+		}
+		else
+			printf("ÃÜÂë´íÎó£¡\n");
+	}
+	if(i == 3)
+	printf("Èý´ÎÃÜÂë´íÎó£¬ÎÞ·¨¼ÌÐøµÇÂ¼£¡\n");
+
+	return 0;
+}
